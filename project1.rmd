@@ -670,7 +670,7 @@ survClust continues to be used by many researchers in the scientific community.
 
 ## Is integration always better? 
 
-survClust can be run individually in multiple datasets or in an integrated fashion across different modalities profiled for constant subjects. According to the nature and quality of these datasets, one might perform better or worse by integrating all the available information. We ran survClust on individual datasets from scenarios 2 and 3 and compare them with the integrated run as reported above. 
+survClust can be run over a single or multiple datasets in an integrated fashion across different modalities profiled for constant subjects. According to the nature and quality of these datasets, the integrated solution might perform better or worse by incorporating all the available information. We ran survClust on individual datasets from scenarios 2 and 3 and compared them with the integrated run as reported above. 
 
 ```{r}
 
@@ -724,11 +724,11 @@ pp3 <- annotate_figure(pp, top = text_grob("Scenario3", face = "bold"))
 ggarrange(pp2, pp3)
 ```
 
-In the plots above, we plot the median value across cross validated rounds for each k for that particular metric (logrank, SPWSS etc.). The bars represent the 25th and 75th quantiles of the data. 
+In the plots above, we plot the median value across cross validated rounds for each k for that particular metric (logrank, SPWSS etc.). The bars represent the 25th and 75th percentiles of the data. 
 
-In scenario 2, we added a noisy data type as dataset 2 and we see that dataset 2 performs worse than integrated and dataset1. Dataset1 carried the strong cluster distinction and is doing as well as integrated survClust solution in terms of peak logrank at `k=3`. 
+In scenario2, dataset2 was simulated as a noisy dataset with very weak clustering information. In the plots above dataset2 performs worse than integrated solution and dataset1 alone. Dataset1 was simulated with a strong clustering information and is doing as well as integrated survClust solution in terms of peak logrank at `k=3`. 
 
-A similar trend is seen for scenario 3, where dataset1 had strong cluster separation but poor survival association with overall low median logrank values. Whereas, integrated solution and dataset2 are performing similar. 
+A similar trend is seen for scenario 3, where dataset1 had strong cluster separation but poor survival association with overall low median logrank values. Whereas, integrated solution and dataset2 alone are performing similar. 
 
 Overall, we see that integrated data type performs as well or slightly better than the dataset carrying the strong association with survival. 
 

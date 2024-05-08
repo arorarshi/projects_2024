@@ -88,7 +88,7 @@ make_integrated_plots <- function(x){
         geom_line() +
         geom_point()+
         geom_errorbar(aes(ymin=q_25, ymax=q_75), width=.2,
-                      position=position_dodge(0.1), alpha = 0.5) + theme_minimal() + 
+                      position=position_dodge(0.1), alpha = 0.6) + theme_minimal() + 
         ylab("median logrank test statistic over 10 cv rounds")
     
     p2 <- x[[2]] %>% 
@@ -96,7 +96,7 @@ make_integrated_plots <- function(x){
         geom_line() +
         geom_point()+
         geom_errorbar(aes(ymin=q_25, ymax=q_75), width=.2,
-                      position=position_dodge(0.1), alpha = 0.5) + theme_minimal() + 
+                      position=position_dodge(0.1), alpha = 0.6) + theme_minimal() + 
         ylab("median SPWSS over 10 cv rounds")
     
     p3 <- x[[3]] %>%
