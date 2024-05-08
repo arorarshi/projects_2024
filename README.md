@@ -22,6 +22,6 @@ One of the common ways to present a contingency table is via a Mosaic plot. In R
 
 An improvement to this plot could be to color the bubbles according to the actual sample size of events, highlighting any small sample sizes.
 
-![Distribution of genomic alterations across lung cancer subtypes](images/project3_lung.png)
+![Fig: Distribution of genomic alterations across lung cancer subtypes](images/project3_lung.png)
 
-This figure also conveys any overlapping patterns across the subtypes, for example `TP53.mut` feature is seen across all subtypes except Carcinoids, `SOX2.gain`, `NFE2L2.mut`, `FGFR1.gain` co-occur in LUSC etc.
+This figure also conveys any overlapping patterns seen across the subtypes, for example `TP53.mut` feature is seen across all subtypes except Carcinoids, `SOX2.gain`, `NFE2L2.mut`, `FGFR1.gain` co-occur in LUSC etc.
